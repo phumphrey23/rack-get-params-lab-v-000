@@ -21,6 +21,7 @@ class Application
         @@cart.each do |item|
           resp.write "#{item}\n"
         end
+      end
     elsif req.path.match(/add/)
       req.params["item"]
       #{}`GET` param with the key `item`
